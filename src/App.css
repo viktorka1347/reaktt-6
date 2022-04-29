@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Times New Roman', serif;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1.4;
+  color: black;
+  background-color: transparent;
+}
+
+body {
+  background-color: white;
+  font-size: 18px;
+}
+
+button {
+  background-color: white;
+}
+
+button:hover {
+  background-color: limegreen;
+}
+
+input::placeholder {
+  color: #b0b0b0;
+}
+
+.TaskHeader {
+  font-size: 48px;
+  padding: 0.5em;
+  background-color: darkgray;
+}
+
+.TaskHeader-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Задача 1 */
+
+.WorldClock {
+  padding: 20px;
+}
+
+.ClockAddForm {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.ClockAddForm * {
+  display: block;
+}
+
+.ClockAddForm input,
+.ClockAddForm button {
+  padding: 0.3em 0.5em;
+  border: 1px solid black;
+}
+
+.ClockAddForm button {
+  margin-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.ClockAddForm-error {
+  margin: 0.5em 1em;
+  color: red;
+}
+
+.ClockInput {
+  margin-right: 2em;
+}
+
+.ClockInput p {
+  margin: 0 0 0.3em 1em;
+}
+
+.WorldClock-clocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Clock {
+  margin-right: 3em;
+}
+
+.Clock-title {
+  text-align: center;
+}
+
+.ClockFace {
+  position: relative;
+  width: 7em;
+  height: 7em;
+  margin: 0.5em 0;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.ClockFace-hand-hour {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 0;
+  height: 35%;
+  border-left: 2px solid black;
+  transform-origin: center bottom;
+}
+
+.ClockFace-hand-minute {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 50%;
+  border-left: 2px solid black;
+  transform-origin: center bottom;
+}
+
+.ClockFace-hand-second {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 50%;
+  border-left: 2px dashed black;
+  transform-origin: center bottom;
+}
+
+.ClockFace-arrow {
+  position: absolute;
+  left: -6px;
+}
+
+.ClockFace-button {
+  position: absolute;
+  top: -0.75em;
+  right: -0.75em;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.ClockNumbers {
+  text-align: center;
+}
+
+/* Задача 2 */
+
+.Notes {
+  padding: 20px;
+}
+
+.Notes button {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.Notes-title {
+  display: flex;
+  align-items: center;
+}
+
+.Notes-title-text {
+  font-size: 2em;
+}
+
+.Notes .Notes-button-update {
+  margin-left: 1em;
+  color: #00a000;
+  transform: rotate(90deg);
+}
+
+.Notes-notes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.Notes-form {
+  position: relative;
+  width: 400px;
+}
+
+.Notes-form-label {
+  display: block;
+}
+
+.Notes-form-input {
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  padding: 1.5em;
+  font-size: 0.8em;
+  border: 1px solid black;
+}
+
+.Notes .Notes-button-add {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 2.2em;
+  padding-right: 0.3em;
+  text-align: right;
+}
+
+.Note {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 0 2.5em 2em 0;
+  padding: 1.5em;
+  border: 1px solid black;
+}
+
+.Note-text {
+  font-size: 0.8em;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.Note-button-delete {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  color: #d00000;
+}
